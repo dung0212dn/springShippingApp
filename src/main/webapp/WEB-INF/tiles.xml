@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layouts/main.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layouts/header.jsp" />
+        <put-attribute name="breadcrumbs" value="" />
+        <put-attribute name="heading" value="" />
+        <put-attribute name="sidebar" value=""/>
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layouts/footer.jsp" />
+    </definition>
+    
+    <definition name="home.index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <!-- Auth View -->
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/auth/login.jsp" />
+    </definition>
+    
+    <definition name="accessdenied" template="/WEB-INF/pages/auth/access-denied.jsp">
+    </definition>
+    
+    <!-- Promotions View -->
+    
+    <definition name="promotions.index" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý sản phẩm" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/promotions/index.jsp" />
+    </definition>
+    <definition name="promotions.show" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết khuyến mãi" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/promotions/show.jsp" />
+    </definition>
+    <definition name="promotions.create" extends="baseLayout">
+        <put-attribute name="title" value="Thêm khuyến mãi" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/promotions/create.jsp" />
+    </definition>
+    
+    <!-- Users View -->
+     
+    <definition name="users.index" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý nguời dùng" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/users/index.jsp" />
+        <put-attribute name="breadcrumbs" value=""/>
+    </definition>
+    <definition name="users.show" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết nguời dùng" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/users/show.jsp" />
+    </definition>
+    <definition name="users.create" extends="baseLayout">
+        <put-attribute name="title" value="Thêm nguời dùng" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/users/create.jsp" />
+    </definition>
+    
+    <!-- Order Views -->
+      <definition name="orders.index" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý đơn giao" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/orders/index.jsp" />
+        <put-attribute name="breadcrumbs" value=""/>
+    </definition>
+    <definition name="orders.show" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết nguời dùng" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/orders/show.jsp" />
+    </definition>
+    <definition name="orders.create" extends="baseLayout">
+        <put-attribute name="title" value="Thêm nguời dùng" />
+        <put-attribute name="sidebar" value="/WEB-INF/layouts/sidebar.jsp"/>
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/orders/create.jsp" />
+    </definition>
+</tiles-definitions>
+

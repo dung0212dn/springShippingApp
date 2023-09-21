@@ -1,0 +1,28 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 15, 2023, 3:12:31 PM
+    Author     : ACER
+*/
+
+:root {
+    --navy-blue: #6610F2;
+}
+
+.bg-base{
+    background-color: #f9f9f9 !important;
+}
+
+.rounded-10{
+    border-radius: 10px;
+}
+
+.bg-navy-blue{
+    background-color: var(--navy-blue);
+}
+
+.h-inherit{
+    height: inherit;
+}
